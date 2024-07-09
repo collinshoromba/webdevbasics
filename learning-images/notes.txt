@@ -1,0 +1,54 @@
+Why you should use alt text in your images? 
+
+- The user is visually impaired, and is using a screen reader
+to read the web out to them. In fact, having alt text
+available to describe images is useful to most users.
+
+- As described above, the spelling of the file or path name might be wrong.
+
+- The browser doesn't support the image type. Some people still use text-only browsers,
+    such as Lynx, which displays the alt text of images.
+
+- You may want to provide text for search engines to utilize; 
+  for example, search engines can match alt text with search queries.
+
+- Users have turned off images to reduce data transfer volume and distractions. 
+This is especially common on mobile phones, 
+and in countries where bandwidth is limited or expensive.
+
+<!--
+    Ways of inserting images on the web page:
+
+    <img src="dinosaur.jpg" alt="Dinosaur" />
+    <img src="images/dinosaur.jpg" alt="Dinosaur" />
+    
+    Search engines also read image filenames and count them towards SEO. 
+    Therefore, you should give your image a descriptive filename;
+     dinosaur.jpg is better than img835.png.
+     
+     <img src="https://www.example.com/images/dinosaur.jpg" alt="Dinosaur" />
+
+     Linking via absolute URLs is not recommended, however. 
+     You should host the images you want to use on your site, 
+     which in simple setups means keeping the images for your
+      website on the same server as your HTML. This will make it easier 
+      for the mantainance of the website.
+    -->
+
+    Decoration. You should use CSS background images for decorative images, 
+    but if you must use HTML, add a blank alt="". 
+    If the image isn't part of the content, 
+    a screen reader shouldn't waste time reading it.
+
+Note: Although, as we have said, it is good practice to specify the 
+actual size of your images using HTML attributes, 
+you should not use them to resize images.
+
+If you set the image size too big, you'll end up with images that look grainy,
+ fuzzy, or too small, and wasting bandwidth downloading an image 
+ that is not fitting the user's needs. The image may also end up looking distorted,
+  if you don't maintain the correct aspect ratio. 
+  You should use an image editor to put your image at the correct size
+   before putting it on your webpage.
+
+If you do need to alter an image's size, you should use CSS instead.
